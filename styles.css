@@ -53,14 +53,6 @@ img {
   background: #FFFFFF;
   border-radius: 50%; }
 
-.sport::after {
-  content: ", "; }
-
-.pay::before {
-  content: " $"; }
-
-.pay::after {
-  content: "M"; }
 
 .extra {
   display: none;
@@ -71,6 +63,16 @@ img {
   color: #000000;
   margin-top: 9px; }
 
+  .sport::after {
+    content: ", "; }
+  
+  .pay::before {
+    content: " $"; }
+  
+  .pay::after {
+    content: "M"; }
+
+    
 main {
   display: grid;
   grid-template-columns: auto auto auto auto;
