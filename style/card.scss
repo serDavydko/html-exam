@@ -1,23 +1,18 @@
-.photo {
-
-}
 
 img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    transition: 1s;
 }
 
 .people {
     margin: 20px 20px 30px 30px;
 }
 
-.extra {
-    display:none;
-}
 
 .name {
-font-family: Arial;
+font-family: Arial,sans-serif;
 font-size: 20px;
 line-height: 23px;
 text-align: center;
@@ -27,15 +22,31 @@ font-weight: 500;
 
 .person {
     display: flex;
+    height: 270px;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-items: center;
     border-radius: 10px;
-    margin:30px 15px 10px;
+    margin:40px 15px 20px;
     padding: 10px 10px 0;
+    transition: 1s;
 }
 
+.person:hover img {
+    border-radius: 60px;
+}
+
+.person:hover .extra {
+    display:flex;
+
+}
+
+.person:hover {
+    background: #EEEEEE;
+    height: 300px;
+}
 .rank {
     display:block;
     position:relative;
@@ -52,7 +63,24 @@ font-weight: 500;
     border-radius: 50%;
 }
 
-.person:hover .extra {
-    display:flex;
+.sport::after {
+  content: ", ";
 }
 
+.pay::before {
+    content:" $";
+}
+.pay::after {
+    content: "M";
+}
+
+.extra {
+display:none;
+font-family: Arial;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #000000;
+margin-top:9px;
+
+}
